@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+.caja {
+    background-color: #ffffff;
+    width: 250px;
+    height: 330px;
+    border: 2px black solid;
+    transition: all .2s;
+    box-shadow:0 0 0px black;
+    margin: 20px;
+}
+.caja:hover{
+    transform: translate(5px ,5px);
+    box-shadow:-5px -5px 0px ;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+img {
+    max-width: 150px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    border: 2px black solid;
+    max-width: 50%;
+}
+
+
+
+.footer ul li{
+    display: inline-block;
+   margin: 20px;
+    list-style: none;
+    
+}
+
+ul {
+    padding: 0;
+}
+
+
