@@ -3,64 +3,57 @@
         "id": "1",
         "nombre":"Buzo Originals",
         "marca": "Adidas",
-        "precio":"30.000",
-        "stock":"30",
+        "precio": 30.000,
         "img":"./img/buzo1.png"
     },
     {
         "id": "2",
         "nombre":"Buzo Hulk",
         "marca": "Adidas",
-        "precio":"26.000",
-        "stock":"10",
+        "precio": 26.000,
         "img":"./img/buzo2.png"
     },
     {
         "id": "3",
         "nombre":"Buzo Rosa",
         "marca": "Adidas",
-        "precio":"29.000",
-        "stock":"40",
+        "precio":29.000,
         "img":"./img/buzo3.png"
     },
     {
         "id": "4",
         "nombre":"Buzo Amarillo",
         "marca": "Adidas",
-        "precio":"40.000",
-        "stock":"20",
+        "precio":40.000,
         "img":"./img/buzo4.png"
     },
     {
         "id": "5",
         "nombre":"Zapa Ozelia",
         "marca": "Adidas",
-        "precio":"32.999",
-        "stock":"20",
+        "precio":32.000,
         "img":"./img/zapa1.png"
     },
     {
         "id": "6",
         "nombre":"Zapa Team Curt",
         "marca": "Adidas",
-        "precio":"15.999",
-        "stock":"15",
+        "precio":15.000,
+        "stock":15,
         "img":"./img/zapa2.png"
     },
     {
         "id": "7",
         "nombre":"Zapa Ozweego",
         "marca": "Adidas",
-        "precio":"35.999",
-        "stock":"10",
+        "precio":35.000,
         "img":"./img/zapa3.png"
     },
     {
         "id": "8",
         "nombre":"Zapa NY 90",
         "marca": "Adidas",
-        "precio":"23.999",
-        "stock":"5",
+        "precio":23.000,
         "img":"./img/zapa4.png"
     }
 ]

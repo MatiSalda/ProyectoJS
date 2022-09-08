@@ -1,8 +1,43 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.header {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ulNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.ulNav li {
+    margin: 20px 20px;
+}
+
+.ulNav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contenedorLogo {
+    margin: 0 50px;
+}
 
 .caja {
     background-color: #ffffff;
@@ -10,43 +45,244 @@
     height: 330px;
     border: 2px black solid;
     transition: all .2s;
-    box-shadow:0 0 0px black;
+    box-shadow: 0 0 0px black;
     margin: 20px;
 }
-.caja:hover{
-    transform: translate(5px ,5px);
-    box-shadow:-5px -5px 0px ;
+
+.caja:hover {
+    transform: translate(5px, 5px);
+    box-shadow: -5px -5px 0px;
 }
 
-section{
+section {
     display: flex;
     justify-content: space-around;
 }
-
 
 img {
     max-width: 150px;
 }
 
-
 .footer {
+    width: 60%;
     display: flex;
     justify-content: center;
     border: 2px black solid;
-    max-width: 50%;
+
 }
 
-
-
-.footer ul li{
+.footer ul li {
     display: inline-block;
-   margin: 20px;
+    margin: 20px;
     list-style: none;
-    
+
 }
 
 ul {
     padding: 0;
 }
 
+.carrito {
+    width: 90%;
+    height: 30%;
+    margin: 20px auto;
+    position: relative;
 
+}
+
+.tituloCarrito {
+    margin: 20px;
+}
+
+.divTitulo {
+    text-align: center;
+}
+
+.sectionProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.divProducto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnAgregar {
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 900;
+    transition: all .5s;
+    border: 2px black solid;
+}
+
+.btnAgregar:hover{
+
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+}
+.cajaCarrito {
+    background-color: #ffffff;
+    width: 15%;
+    height: 10%;
+    border: 2px black solid;
+    box-shadow: -3px -3px 0px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#carritoDom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sectionFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botonBorrar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    text-align: center;
+    background: red;
+    cursor: pointer;
+}
+
+.nombreProducto {
+    background-color: black;
+    padding: 0 15px;
+    color: white;
+}
+
+.titulo {
+    margin: 10px;
+}
+
+.divTextoTotal {
+    margin: 0 10px;
+}
+
+.textoTotal {
+    display: inline-block;
+    margin: 10px 0px 10px 10px;
+}
+
+.vaciarCarrito {
+    cursor: pointer;
+    width: 13%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.finalizarCompra {
+    background-color: black;
+    width: 15%;
+    padding: 10px;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.finalizarCompra:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    background-color: rgba(73, 73, 73, 0.4);
+    z-index: 10;
+}
+
+.login.open {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.login .loginContainer {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    border: 3px solid black;
+}
+
+.login .loginContainer.open {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.login .loginContainer .cerrarLogin {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 2em;
+    color: #000;
+    cursor: pointer;
+}
+
+.formUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.inputNombre {
+    border-style: none;
+    border: 2px solid black;
+    margin: 10px;
+
+}
+
+.inputNombre:focus{
+    outline: none;
+    border: 2px solid black;
+}
+
+.botonFormIngresar {
+    padding: 5px;
+    background-color: white;
+    border-style: none;
+    border: 2px solid black;
+}
+
+.contenedorCarrito{
+    border: 3px solid black;
+}
